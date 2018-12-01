@@ -8,7 +8,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>common</module>
-        <module>site</module>
         <module>client</module>
         <module>akka-initializer</module>
     </modules>
@@ -79,5 +78,21 @@
             <version>2.0.2.RELEASE</version>
         </dependency>
     </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>remitup.SiteApplication</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

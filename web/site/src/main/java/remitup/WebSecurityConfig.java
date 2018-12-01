@@ -17,6 +17,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 "/webjars/**",
                 "/resources/**",
                 "/assets/**",
+                "/actuator/**",
                 "/welcome",
         };
 
