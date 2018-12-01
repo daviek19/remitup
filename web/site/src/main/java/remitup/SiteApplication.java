@@ -13,12 +13,12 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
- * The entry point for the Sagan web application.
+ * The entry point for the Remit web application.
  */
 @SpringBootApplication
 @EnableJpaRepositories(basePackages = {"remitup"})
 @EntityScan(basePackages = {"remitup"})
-@ComponentScan(basePackages = {"remitup"})
+@ComponentScan(basePackages = {"remitup, akka.initializer"})
 public class SiteApplication {
     
     private static final Logger LOGGER = LoggerFactory.getLogger(SiteApplication.class);
@@ -31,9 +31,9 @@ public class SiteApplication {
     }
 
     @Bean
-    public CommandLineRunner run() throws Exception {
+    public CommandLineRunner run() {
         return args -> {
-            LOGGER.info("The actor system name is {}", akkaManager.getActorSystemName());            
+            LOGGER.info("***********The actor system name is {}", akkaManager.getActorSystemName());            
         };
     }
 }
