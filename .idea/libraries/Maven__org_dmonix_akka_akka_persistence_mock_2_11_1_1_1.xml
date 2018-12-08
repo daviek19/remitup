@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.dmonix.akka:akka-persistence-mock_2.11:1.1.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dmonix/akka/akka-persistence-mock_2.11/1.1.1/akka-persistence-mock_2.11-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dmonix/akka/akka-persistence-mock_2.11/1.1.1/akka-persistence-mock_2.11-1.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dmonix/akka/akka-persistence-mock_2.11/1.1.1/akka-persistence-mock_2.11-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

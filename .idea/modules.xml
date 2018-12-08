@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/web/akka-initializer/akka-initializer.iml" filepath="$PROJECT_DIR$/web/akka-initializer/akka-initializer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/client/client.iml" filepath="$PROJECT_DIR$/web/client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/common/common.iml" filepath="$PROJECT_DIR$/web/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/remitup.iml" filepath="$PROJECT_DIR$/.idea/remitup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/site/site.iml" filepath="$PROJECT_DIR$/web/site/site.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
 </project>

@@ -18,22 +18,22 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories(basePackages = {"remitup"})
 @EntityScan(basePackages = {"remitup"})
-@ComponentScan(basePackages = {"remitup, akka.initializer"})
+@ComponentScan(basePackages = {"remitup", "akka.initializer"})
 public class SiteApplication {
-    
+
     private static final Logger LOGGER = LoggerFactory.getLogger(SiteApplication.class);
 
     @Autowired
     private AkkaManager akkaManager;
 
     public static void main(String[] args) {
-        SpringApplication.run(SiteApplication.class, args);       
+        SpringApplication.run(SiteApplication.class, args);
     }
 
     @Bean
     public CommandLineRunner run() {
         return args -> {
-            LOGGER.info("***********The actor system name is {}", akkaManager.getActorSystemName());            
+            LOGGER.info("***********The actor system name is {}", akkaManager.getActorSystemName());
         };
     }
 }
